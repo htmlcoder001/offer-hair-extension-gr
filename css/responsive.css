@@ -30,7 +30,7 @@
     max-width: 300px;
   }
   .theme-button__text {
-    font-size: 21px;
+    font-size: 18px;
   }
   .form-progress__item, .cta-progress__item {
     width: 36px
@@ -42,7 +42,7 @@
   .features-item__text,
   .about-wrapper__text,
   .cases-item__title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .features-grid__item,
   .cases-grid__item {
@@ -127,5 +127,11 @@
     font-size: 16px;
     height: 65px;
     max-width: 100%;
+  }
+  .timer-text__item {
+    font-size: 12px;
+  }
+  .form-amount__text, .cta-amount__text {
+    font-size: 16px;
   }
 }
