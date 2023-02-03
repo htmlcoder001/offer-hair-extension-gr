@@ -7,8 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no"/>
-  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
-  <title>Hair Extensions με καινοτόμο σύστημα Clip-In</title>
+
+  <title>Hair Extensions - с инновационной системой Clip-In</title>
+  
+  <meta property="og:title" content="Hair Extensions"/>
+  <meta property="og:description" content="с инновационной системой Clip-In"/>
+  <meta property="og:image" content="https://i.imgur.com/LR9PC67.jpg"/>
+  <meta property="og:type" content="website"/>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -421,9 +428,17 @@
     <!-- Form -->
     <section id="order_form">
       <div class="theme-wrapper form-wrapper">
-        <form action="" class="form-wrapper__box">
-          <input required type="text" class="form-box__input" placeholder="Όνομα">
-          <input required type="tel" class="form-box__input" placeholder="Τηλέφωνο (ενεργό κινητό)">
+        <form class="form-wrapper__box" method="post">
+		
+<input name="offer_id" type="hidden" value="{offer_id}">
+<input name="geo" type="hidden" value="">
+<input name="web_id" type="hidden" value="{web_id}">
+<input name="click_id" type="hidden" value="{click_id}">
+<input name="time_zone" type="hidden" value="+3">
+<input name="lang" type="hidden" value="GR">
+		
+          <input name="name" required type="text" class="form-box__input" placeholder="Όνομα ">
+          <input name="phone" required type="tel" class="form-box__input" placeholder="Τηλέφωνο (ενεργό κινητό)">
           <button type="submit" class="theme-button">
             <span class="theme-button__text">ΑΓΟΡΑ ΜΕ ΤΗΝ ΕΚΠΤΩΣΗ</span>
           </button>
@@ -469,6 +484,25 @@
   <script type="text/javascript" src="js/countdown.js"></script>
   <script type="text/javascript" src="js/swiper.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript" src="/libs/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        $.init({
+
+            priceSelector: ".new-cost",
+            oldPriceSelector: ".old-cost",
+            reportFormSelector: ".report-abuse__form",
+            reportCallback: function (data) {
+                console.log('ReportCallback:', data);
+            },
+            callback: function() {
+                console.log("Do something after prices changing");
+
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
